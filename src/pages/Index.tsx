@@ -171,7 +171,8 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-6xl mx-auto animate-fade-in">
             <div className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full inline-block mb-4 md:mb-6 font-semibold text-xs md:text-sm">
-              La llave que desbloquea viralidad real en redes - ahora 30% off en black friday
+              La llave que desbloquea viralidad real en redes ahora<br />
+              <span className="uppercase">30% OFF EN BLACK FRIDAY</span>
             </div>
             
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight max-w-6xl mx-auto px-2">
@@ -682,7 +683,7 @@ const Index = () => {
                     "Explicaciones de cada parte del guión y cómo usarla para retener",
                     "Ejemplos reales y fórmulas listas para adaptar a tu estilo"
                   ],
-                  conclusion: "Este bonus es como tener mi cabeza al lado tuyo cada vez que escribes un video.",
+                  conclusion: "Este bonus es como tener mi cabeza al lado tuyo cada vez que escribís un video.",
                   image: "/lovable-uploads/3b318131-11ca-478c-bfd7-c8955d4d6696.png"
                 }
               ].map((bonus, index) => (
@@ -874,7 +875,7 @@ const Index = () => {
           <p className="text-lg md:text-xl mb-6 md:mb-8 opacity-90">
             Miles de personas ya están aplicando estos pasos. Es tu momento.
           </p>
-          <CTAButton isWhite={true}>
+          <CTAButton>
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm md:text-base lg:text-lg font-bold">Quiero desbloquear el curso ahora</span>
               <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
