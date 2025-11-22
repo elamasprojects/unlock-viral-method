@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight, Lock, Key, Unlock } from "lucide-react";
 
@@ -27,13 +28,18 @@ const Index = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonialImages.length) % testimonialImages.length);
   };
 
-  const CTAButton = ({ children, className = "", isLast = false }: { children: React.ReactNode; className?: string; isLast?: boolean }) => (
-    <Button 
-      className={`w-full max-w-lg mx-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-12 md:py-16 px-3 md:px-4 rounded-2xl text-xs md:text-sm lg:text-base shadow-lg transition-all duration-300 border-0 hover:-translate-y-2 hover:shadow-2xl ${className}`}
+  const CTAButton = ({ children, className = "", isLast = false, isWhite = false }: { children: React.ReactNode; className?: string; isLast?: boolean; isWhite?: boolean }) => (
+    <ShimmerButton 
+      className={`w-full max-w-lg mx-auto font-bold py-12 md:py-16 px-3 md:px-4 text-xs md:text-sm lg:text-base shadow-lg transition-all duration-300 border-0 hover:-translate-y-2 hover:shadow-2xl ${isWhite ? 'text-black' : 'text-white'} ${className}`}
       onClick={() => window.open('https://araceliprudente51-0583.freshlearn.com/checkout/Course/33936', '_blank')}
+      background={isWhite ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 1)"}
+      shimmerColor={isWhite ? "#000000" : "#ffffff"}
+      shimmerSize="0.1em"
+      shimmerDuration="2s"
+      borderRadius="1rem"
     >
       {children}
-    </Button>
+    </ShimmerButton>
   );
 
   // Imágenes de testimonios "He ayudado a"
@@ -164,8 +170,8 @@ const Index = () => {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-6xl mx-auto animate-fade-in">
-            <div className="bg-cyan-100 text-cyan-800 px-4 md:px-6 py-2 md:py-3 rounded-full inline-block mb-4 md:mb-6 font-semibold text-xs md:text-sm">
-              LA LLAVE QUE DESBLOQUEA VIRALIDAD REAL EN REDES
+            <div className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full inline-block mb-4 md:mb-6 font-semibold text-xs md:text-sm">
+              La llave que desbloquea viralidad real en redes - ahora 30% off en black friday
             </div>
             
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight max-w-6xl mx-auto px-2">
@@ -200,8 +206,9 @@ const Index = () => {
 
             <CTAButton>
               <div className="flex flex-col items-center gap-1">
-                <span className="text-sm md:text-base lg:text-lg font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-                <div className="text-xs opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+                <span className="text-sm md:text-base lg:text-lg font-bold">Quiero desbloquear el curso ahora</span>
+                <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+                <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
               </div>
             </CTAButton>
           </div>
@@ -281,8 +288,9 @@ const Index = () => {
               <div className="pt-6">
                 <CTAButton>
                   <div className="flex flex-col items-center gap-1 md:gap-2">
-                    <span className="text-base md:text-lg lg:text-xl font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-                    <div className="text-xs md:text-sm opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+                    <span className="text-base md:text-lg lg:text-xl font-bold">Quiero desbloquear el curso ahora</span>
+                    <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+                    <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
                   </div>
                 </CTAButton>
               </div>
@@ -615,8 +623,9 @@ const Index = () => {
             <div className="text-center mt-12 md:mt-16">
               <CTAButton>
                 <div className="flex flex-col items-center gap-1">
-                  <span className="text-sm md:text-base lg:text-lg font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-                  <div className="text-xs opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+                  <span className="text-sm md:text-base lg:text-lg font-bold">Quiero desbloquear el curso ahora</span>
+                  <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+                  <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
                 </div>
               </CTAButton>
             </div>
@@ -717,8 +726,9 @@ const Index = () => {
             <div className="text-center mt-12 md:mt-16">
               <CTAButton>
                 <div className="flex flex-col items-center gap-1 md:gap-2">
-                  <span className="text-base md:text-lg lg:text-xl font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-                  <div className="text-xs md:text-sm opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+                  <span className="text-base md:text-lg lg:text-xl font-bold">Quiero desbloquear el curso ahora</span>
+                  <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+                  <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
                 </div>
               </CTAButton>
             </div>
@@ -799,7 +809,7 @@ const Index = () => {
                     
                     {/* Updated price banner without background */}
                     <div className="p-4 md:p-6 rounded-xl mb-6">
-                      <p className="text-base md:text-lg mb-2 text-gray-300">🔓 PRECIO DE LANZAMIENTO HOY:</p>
+                      <p className="text-base md:text-lg mb-2 text-gray-300">🔓 PRECIO DE BLACK FRIDAY:</p>
                       <div className="flex items-center justify-center gap-4 mb-4">
                         <span className="text-xl md:text-2xl line-through text-gray-400">$2,110</span>
                         <span className="text-4xl md:text-5xl font-bold text-white">$67 USD</span>
@@ -812,8 +822,9 @@ const Index = () => {
                 {/* Updated CTA button to match other CTAs */}
                 <CTAButton>
                   <div className="flex flex-col items-center gap-1 md:gap-2">
-                    <span className="text-sm md:text-base lg:text-lg font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-                    <div className="text-xs opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+                    <span className="text-sm md:text-base lg:text-lg font-bold">Quiero desbloquear el curso ahora</span>
+                    <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+                    <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
                   </div>
                 </CTAButton>
               </CardContent>
@@ -863,10 +874,11 @@ const Index = () => {
           <p className="text-lg md:text-xl mb-6 md:mb-8 opacity-90">
             Miles de personas ya están aplicando estos pasos. Es tu momento.
           </p>
-          <CTAButton className="bg-white text-cyan-600 hover:bg-gray-100">
+          <CTAButton isWhite={true}>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-sm md:text-base lg:text-lg font-bold">¡Quiero Desbloquear El Curso Ahora!</span>
-              <div className="text-xs opacity-90 font-medium">+3 Bonus Especiales, Por Tan Solo 67usd</div>
+              <span className="text-sm md:text-base lg:text-lg font-bold">Quiero desbloquear el curso ahora</span>
+              <div className="text-xs md:text-sm opacity-90 font-medium">30% OFF + clase especial</div>
+              <div className="text-xs md:text-sm opacity-90 font-medium">A tan solo 67 USD</div>
             </div>
           </CTAButton>
         </div>
