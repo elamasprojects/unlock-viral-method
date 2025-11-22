@@ -172,7 +172,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto animate-fade-in">
             <div className="bg-black text-white px-4 md:px-6 py-2 md:py-3 rounded-full inline-block mb-4 md:mb-6 font-semibold text-xs md:text-sm">
               La llave que desbloquea viralidad real en redes, ahora<br />
-              <span className="uppercase">30% OFF EN BLACK FRIDAY</span>
+                <span className="uppercase">30% OFF EXCLUSIVO BLACK FRIDAY</span>
             </div>
             
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight max-w-6xl mx-auto px-2">
@@ -208,7 +208,7 @@ const Index = () => {
             <CTAButton>
               <div className="flex flex-col items-center gap-2">
                 <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                  BLACK FRIDAY
+                  EXCLUSIVO BLACK FRIDAY
                 </span>
                 <span className="text-sm md:text-base lg:text-lg font-extrabold uppercase">
                   QUIERO DESBLOQUEAR EL CURSO AHORA
@@ -299,7 +299,7 @@ const Index = () => {
                 <CTAButton>
                   <div className="flex flex-col items-center gap-2">
                     <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                      BLACK FRIDAY
+                      EXCLUSIVO BLACK FRIDAY
                     </span>
                     <span className="text-base md:text-lg lg:text-xl font-extrabold uppercase">
                       QUIERO DESBLOQUEAR EL CURSO AHORA
@@ -643,7 +643,7 @@ const Index = () => {
               <CTAButton>
                 <div className="flex flex-col items-center gap-2">
                   <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                    BLACK FRIDAY
+                    EXCLUSIVO BLACK FRIDAY
                   </span>
                   <span className="text-sm md:text-base lg:text-lg font-extrabold uppercase">
                     QUIERO DESBLOQUEAR EL CURSO AHORA
@@ -755,7 +755,7 @@ const Index = () => {
               <CTAButton>
                 <div className="flex flex-col items-center gap-2">
                   <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                    BLACK FRIDAY
+                    EXCLUSIVO BLACK FRIDAY
                   </span>
                   <span className="text-base md:text-lg lg:text-xl font-extrabold uppercase">
                     QUIERO DESBLOQUEAR EL CURSO AHORA
@@ -860,7 +860,7 @@ const Index = () => {
                 <CTAButton>
                   <div className="flex flex-col items-center gap-2">
                     <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                      BLACK FRIDAY
+                      EXCLUSIVO BLACK FRIDAY
                     </span>
                     <span className="text-sm md:text-base lg:text-lg font-extrabold uppercase">
                       QUIERO DESBLOQUEAR EL CURSO AHORA
@@ -923,7 +923,7 @@ const Index = () => {
           <CTAButton>
             <div className="flex flex-col items-center gap-2">
               <span className="px-3 py-1 rounded-full bg-yellow-400 text-black text-[10px] md:text-xs font-bold tracking-wide mb-1">
-                BLACK FRIDAY
+                EXCLUSIVO BLACK FRIDAY
               </span>
               <span className="text-sm md:text-base lg:text-lg font-extrabold uppercase">
                 QUIERO DESBLOQUEAR EL CURSO AHORA
