@@ -30,7 +30,7 @@ const Index = () => {
 
   const CTAButton = ({ children, className = "", isLast = false, isWhite = false }: { children: React.ReactNode; className?: string; isLast?: boolean; isWhite?: boolean }) => (
     <ShimmerButton 
-      className={`w-full max-w-lg mx-auto font-bold py-12 md:py-16 px-3 md:px-4 text-xs md:text-sm lg:text-base shadow-lg transition-all duration-300 border-0 hover:-translate-y-2 hover:shadow-2xl ${isWhite ? 'text-black' : 'text-white'} ${className}`}
+      className={`w-full max-w-lg mx-auto font-bold py-6 md:py-12 px-3 md:px-4 text-xs md:text-sm lg:text-base shadow-lg transition-all duration-300 border-0 hover:-translate-y-2 hover:shadow-2xl ${isWhite ? 'text-black' : 'text-white'} ${className}`}
       onClick={() => window.open('https://araceliprudente51-0583.freshlearn.com/checkout/Course/33936', '_blank')}
       background={isWhite ? "rgba(255, 255, 255, 1)" : "rgba(0, 0, 0, 1)"}
       shimmerColor={isWhite ? "#000000" : "#ffffff"}
